@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'datical-weatherapp';
+  title = 'Weather App';
+  description = 'Pick two cites from the dropdowns and see which city has the better weather :)';
+  description2 = 'Start with filling out each drop down.';
+  description3 = 'Then find their weather.';
 }

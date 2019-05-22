@@ -1,0 +1,48 @@
+<mat-accordion>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CITY 1
+      </mat-panel-title>
+      <mat-panel-description>
+        Pick a city
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input id="city1" matInput placeholder="City">
+    </mat-form-field>
+
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        CITY 2
+      </mat-panel-title>
+      <mat-panel-description>
+        Pick another city 
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+
+    <mat-form-field>
+      <input id="city2" matInput placeholder="City">
+    </mat-form-field>
+
+  </mat-expansion-panel>
+</mat-accordion>
+<mat-card>
+  <button mat-raised-button (click)="test1()">Get Weather for City 1</button>
+  <button mat-raised-button (click)="test2()">Get Weather for City 2</button>
+</mat-card>
+<mat-card>
+    <button mat-raised-button (click)="compare()">Submit Cities For Comparision</button>
+  </mat-card>
+
+<!-- This is where the API data will display the City Weather Info-->
+<div class="row">
+  <div class="col-md-6"><div id="output1"></div></div>
+  <div class="col-md-6"><div id="output2"></div></div>
+</div>
+
+
+
